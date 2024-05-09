@@ -1,0 +1,178 @@
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.qa-card[data-v-578e70a0] {
+  background-color: white;
+  margin-top: 0.9375rem;
+  border-radius: 0.3125rem;
+}
+.qa-card .date[data-v-578e70a0] {
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 0.875rem;
+}
+.qa-card .qc_title[data-v-578e70a0] {
+  display: flex;
+  align-items: center;
+}
+.qa-card .qc_title uni-image[data-v-578e70a0] {
+  width: 1.09375rem;
+  height: 1.09375rem;
+  margin-left: 0.46875rem;
+  margin-right: 0.625rem;
+}
+.qa-card .question[data-v-578e70a0] {
+  font-size: 1rem;
+  font-weight: 550;
+}
+.qa-card .images[data-v-578e70a0] {
+  padding-left: 2.1875rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.9375rem;
+  position: relative;
+}
+.qa-card .images uni-image[data-v-578e70a0] {
+  border-radius: 0.3125rem;
+  margin-right: 0.9375rem;
+  height: 5rem;
+  width: 5rem;
+}
+.qa-card .images .image-count[data-v-578e70a0] {
+  position: absolute;
+  bottom: 0.15625rem;
+  right: 2.8125rem;
+  background-color: rgba(128, 128, 128, 0.5);
+  color: white;
+  border-radius: 0.3125rem;
+}
+.qa-card .username[data-v-578e70a0] {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+.qa-card .answer[data-v-578e70a0] {
+  padding-left: 2.1875rem;
+}
+.qa-card .stats[data-v-578e70a0] {
+  padding-left: 2.1875rem;
+  margin-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  font-size: 0.75rem;
+  color: #666;
+}
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.expert-card[data-v-153c4fae] {
+  padding: 0.9375rem;
+}
+.expert-card .header[data-v-153c4fae] {
+  display: flex;
+}
+.expert-card .header .avatar[data-v-153c4fae] {
+  width: 3.4375rem;
+  height: 3.4375rem;
+  border-radius: 50%;
+}
+.expert-card .header .info[data-v-153c4fae] {
+  margin-left: 0.9375rem;
+}
+.expert-card .header .info .name[data-v-153c4fae] {
+  font-size: 1.25rem;
+}
+.expert-card .header .info .location[data-v-153c4fae] {
+  padding-top: 0.3125rem;
+  font-size: 0.9375rem;
+}
+.expert-card .box[data-v-153c4fae] {
+  margin-top: 0.625rem;
+  margin-bottom: 0.9375rem;
+  background-color: #fefefe;
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+}
+.expert-card .box .certification[data-v-153c4fae] {
+  margin-bottom: 0.9375rem;
+}
+.expert-card .box .stats[data-v-153c4fae] {
+  margin-bottom: 0.9375rem;
+  color: #666;
+  display: flex;
+}
+.expert-card .box .stats .count[data-v-153c4fae] {
+  margin-left: 0.3125rem;
+  color: #28B389;
+}
+.expert-card .box .stats .left[data-v-153c4fae] {
+  width: 49%;
+}
+.expert-card .box .stats .right[data-v-153c4fae] {
+  left: 50%;
+}
+.expert-card .box .research[data-v-153c4fae] {
+  color: #666;
+}
+.expert-card .tabs[data-v-153c4fae] {
+  display: flex;
+  margin-left: 1.25rem;
+  margin-bottom: 0.9375rem;
+}
+.expert-card .tabs uni-text[data-v-153c4fae] {
+  margin-right: 1.25rem;
+  color: #666;
+}
+.expert-card .tabs uni-text.active[data-v-153c4fae] {
+  color: black;
+  font-weight: 600;
+}
+.expert-card uni-swiper[data-v-153c4fae] {
+  height: 25rem;
+}
+.expert-card uni-swiper uni-swiper-item[data-v-153c4fae] {
+  display: block;
+}
+.expert-card uni-swiper uni-swiper-item .box1[data-v-153c4fae] {
+  height: 25rem;
+}
+.expert-card uni-swiper uni-swiper-item .content1[data-v-153c4fae] {
+  height: 25rem;
+}
+.expert-card uni-swiper uni-swiper-item .content1 .bio[data-v-153c4fae] {
+  display: block;
+}
+.expert-card uni-swiper uni-swiper-item .content1 .bio .content[data-v-153c4fae] {
+  display: block;
+  white-space: pre-wrap;
+}
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.layout {
+  padding-top: 3.125rem;
+}

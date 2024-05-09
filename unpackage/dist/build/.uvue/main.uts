@@ -1,0 +1,48 @@
+import App from './App.uvue'
+
+import { createSSRApp } from 'vue'
+export function createApp() {
+	const app = createSSRApp(App)
+	return {
+		app
+	}
+}
+export function main(app: IApp) {
+    definePageRoutes();
+    defineAppConfig();
+    
+    (createApp()['app'] as VueApp).mount(app);
+}
+
+import { AppConfig } from "io.dcloud.uniapp.appframe"
+export class UniAppConfig extends AppConfig {
+    override name: string = "maixiaobao"
+    override appid: string = "__UNI__702E843"
+    override versionName: string = "1.0.0"
+    override versionCode: string = "100"
+    override uniCompileVersion: string = "4.07"
+    
+    constructor() {}
+}
+
+import GenPagesHomeHomeClass from './pages/home/home.uvue?type=page'
+import GenPagesInterpretationInterpretationClass from './pages/interpretation/interpretation.uvue?type=page'
+import GenPagesTechnologyTechnologyClass from './pages/technology/technology.uvue?type=page'
+import GenPagesUserUserClass from './pages/user/user.uvue?type=page'
+function definePageRoutes() {
+__uniRoutes.push({ path: "pages/home/home", component: GenPagesHomeHomeClass, meta: { isQuit: true } as PageMeta, style: utsMapOf([["navigationBarTitleText","首页"],["navigationStyle","custom"]]) } as PageRoute)
+__uniRoutes.push({ path: "pages/interpretation/interpretation", component: GenPagesInterpretationInterpretationClass, meta: { isQuit: false } as PageMeta, style: utsMapOf([["navigationBarTitleText","专家解读"]]) } as PageRoute)
+__uniRoutes.push({ path: "pages/technology/technology", component: GenPagesTechnologyTechnologyClass, meta: { isQuit: false } as PageMeta, style: utsMapOf([["navigationBarTitleText","农业技术"]]) } as PageRoute)
+__uniRoutes.push({ path: "pages/user/user", component: GenPagesUserUserClass, meta: { isQuit: false } as PageMeta, style: utsMapOf([["navigationBarTitleText","个人中心"]]) } as PageRoute)
+}
+const __uniTabBar: Map<string, any | null> | null = utsMapOf([["color","#9799a5"],["selectedColor","#28B389"],["borderStyle","white"],["list",[utsMapOf([["pagePath","pages/home/home"],["iconPath","static/images/tabBar/home.png"],["selectedIconPath","static/images/tabBar/home-h.png"],["text","首页"]]),utsMapOf([["pagePath","pages/interpretation/interpretation"],["iconPath","static/images/tabBar/interpretation.png"],["selectedIconPath","static/images/tabBar/interpretation-h.png"],["text","专家解读"]]),utsMapOf([["pagePath","pages/technology/technology"],["iconPath","static/images/tabBar/technology.png"],["selectedIconPath","static/images/tabBar/technology-h.png"],["text","农技"]]),utsMapOf([["pagePath","pages/user/user"],["iconPath","static/images/tabBar/user.png"],["selectedIconPath","static/images/tabBar/user-h.png"],["text","我的"]])]]])
+const __uniLaunchPage: Map<string, any | null> = utsMapOf([["url","pages/home/home"],["style",utsMapOf([["navigationBarTitleText","首页"],["navigationStyle","custom"]])]])
+@Suppress("UNCHECKED_CAST")
+function defineAppConfig(){
+  __uniConfig.entryPagePath = '/pages/home/home'
+  __uniConfig.globalStyle = utsMapOf([["navigationBarTextStyle","black"],["navigationBarTitleText","麦小保"],["navigationBarBackgroundColor","#fff"],["backgroundColor","#F8F8F8"]])
+  __uniConfig.tabBar = __uniTabBar as Map<string, any> | null
+  __uniConfig.conditionUrl = ''
+  __uniConfig.uniIdRouter = utsMapOf()
+  __uniConfig.ready = true
+}

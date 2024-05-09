@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/technology/technology.uvue"],"names":[],"mappings":";;;;SAEC,mBAIc;IAJD,KAAc,iBAAd,sBAAc","file":"pages/technology/technology.uvue","sourceRoot":"","sourcesContent":["<template>\n\n\t<scroll-view style=\"flex:1\">\n\n\t\t\n\n\t</scroll-view>\n\n</template>\n\n<script setup>\n\t\n</script>\n\n<style lang=\"scss\" scoped>\n\t\n</style>\n"]}

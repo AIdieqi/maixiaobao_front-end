@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@dcloudio/uni-app": "^2.0.2-4000720240327001",
+    "unplugin-auto-import": "^0.17.5"
+  }
+}

@@ -1,0 +1,58 @@
+import UniMediaKt from 'io.dcloud.uniapp.extapi'
+
+
+export default {
+  __name: 'home',
+  setup(__props: GenPagesHomeHome) {
+const __ins = getCurrentInstance()!;
+const _ctx = __ins.proxy as GenPagesHomeHome;
+const _cache = __ins.renderCache;
+
+const uploadImage = (filePath: string) => {
+  const uploadTask = uni.uploadFile({
+    url: 'https://www.baidu.com/post', // 服务器上传接口
+    filePath: filePath,
+    name: 'file', // 必须填写，为文件对应的 key
+    success: (uploadFileRes) => {
+      console.log('上传成功', uploadFileRes, " at pages/home/home.uvue:16");
+      // 根据需要处理上传成功后的逻辑
+    },
+    fail: (uploadFileErr) => {
+      console.log('上传失败', uploadFileErr, " at pages/home/home.uvue:20");
+      // 处理上传失败的逻辑
+    }
+  });
+};
+
+const selectImage = () => {
+  uni.chooseImage({
+    count: 1, // 默认为9，设置为1表示只选择一张图片
+    sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+    success: (res) => {
+      // 成功选择图片后的回调
+      console.log(res.tempFilePaths, " at pages/home/home.uvue:32");
+      // 可以在这里添加上传图片到服务器的代码
+      uploadImage(res.tempFilePaths[0]);
+    }
+  });
+};
+
+
+
+
+return "INLINE_RENDER"
+}
+
+}
+
+function GenPagesHomeHomeRender(): any | null {
+
+  return createElementVNode("view", utsMapOf({ class: "container" }), [
+    createElementVNode("image", utsMapOf({
+      class: "upload-image",
+      src: "/static/images/box1.png",
+      onClick: selectImage
+    }))
+  ])
+}
+const GenPagesHomeHomeStyles = [utsMapOf([["container", padStyleMapOf(utsMapOf([["display", "flex"], ["justifyContent", "center"], ["alignItems", "center"], ["height", "100%"]]))], ["upload-image", padStyleMapOf(utsMapOf([["width", "80%"], ["height", "40%"]]))]])]

@@ -1,0 +1,39 @@
+{
+    "name": "kk-yolov8",
+    "id": "kk-yolov8",
+    "version": "1.1.0",
+    "description": "yolov8目标识别",
+    "_dp_type": "nativeplugin",
+    "_dp_nativeplugin": {
+        "android": {
+            "plugins": [
+                {
+                    "type": "module",
+                    "name": "kk-yolov8",
+                    "class": "com.zhoukk.yolov8.NativeLib"
+                }
+            ],
+            "integrateType": "aar",
+            "dependencies": [
+                "com.alibaba:fastjson:1.1.46.android",
+                "com.facebook.fresco:fresco:1.13.0",
+                "com.github.bumptech.glide:glide:4.9.0",
+                "com.google.code.gson:gson:2.6.2"
+            ],
+            "excludeDependencies": [],
+            "compileOptions": {
+                "sourceCompatibility": "1.8",
+                "targetCompatibility": "1.8"
+            },
+            "abis": [
+                "armeabi-v7a",
+                "arm64-v8a",
+                "x86"
+            ],
+            "minSdkVersion": "21",
+            "useAndroidX": false,
+            "permissions": [],
+            "parameters": {}
+        }
+    }
+}
